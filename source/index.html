@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a>
-        <img src="http://placehold.it/150x100"  width="150" height="100" class="logo logo_page-header"alt="Пинк">
+        <img src="http://placehold.it/150x100"  width="150" height="100" class="logo page-header__logo"alt="Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -35,15 +35,9 @@
         <h2 class="visually-hidden">Скачайте наше приложение на свой девайс</h2>
         <button class="button button_download">Скачать приложение</button>
         <div class="download-app__list">
-          <a class="download-app__item download-app__item_apple">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="iOS">
-          </a>
-          <a class="download-app__item download-app__item_android">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Андроид">
-          </a>
-          <a class="download-app__item download-app__item_windows">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Виндовс">
-          </a>
+          <a class="download-app__item download-app__item_apple" aria-label="iOS"></a>
+          <a class="download-app__item download-app__item_android" aria-label="Андроид"></a>
+          <a class="download-app__item download-app__item_windows" aria-label="Виндовс"></a>
         </div>
         <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -65,7 +59,7 @@
             <h3 class="features__title">Заводит новых друзей</h3>
             <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
-          <img src="http://placehold.it/150x100" width="150" height="100" class="features__img_hello" alt="">
+          <img src="http://placehold.it/150x100" width="150" height="100" class="features__img" alt="">
         </div>
       </section>
       <section class="reviews">
@@ -118,7 +112,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts contacts">
+      <section class="contacts page-footer__contacts">
         <p class="contacts__appeal">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__wrapper">
           <b class="contacts__title">Звоните:</b>
