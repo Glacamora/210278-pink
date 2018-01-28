@@ -8,6 +8,7 @@
 .page-footer__appeal {
   font-size: @max-font;
   text-align: @text-align;
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 37px;
 }
@@ -22,12 +23,12 @@
   margin: 0 auto;
 }
 
-.page-footer__null {
+.page-footer__links_mobile-hidden {
   display: none;
 }
 
-@media (min-width: 700px) {
-  .page-footer__null {
+@media (min-width: 660px) {
+  .page-footer__links_mobile-hidden {
     display: flex;
   }
 
@@ -44,7 +45,7 @@
   .page-footer__appeal {
     font-size: 40px;
     line-height: 53px;
-    width: 370px;
+    width: 380px;
   }
 
   .page-footer__links {

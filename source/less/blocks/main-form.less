@@ -16,16 +16,17 @@
 
 .main-form__require {
   text-transform: @text-transform;
-
-  &-note {
-    color: @strong-pink;
-    font-weight: 700;
-  }
-
-  &-filling {
-    display: none;
-  }
 }
+
+.main-form__require-note {
+  color: @strong-pink;
+  font-weight: 700;
+}
+
+.main-form__require-filling {
+  display: none;
+}
+
 
 .main-form__submit-wrapper {
   display: flex;
@@ -37,7 +38,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .main-form__title {
     font-size: @medium-font;
     padding-left: 40px;

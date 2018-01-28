@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .user-photo-item {
     width: 300px;
     margin-left: 0;
@@ -51,19 +51,15 @@
 
   .user-photo-item__description {
     min-height: 155px;
-  }
 
-  .user-photo-item__description_panorama {
-    min-height: 121px;
+    &_panorama {
+      min-height: auto;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .user-photo-item_panorama {
     width: 940px;
-  }
-
-  .user-photo-item__description_panorama {
-    min-height: 96px;
   }
 }

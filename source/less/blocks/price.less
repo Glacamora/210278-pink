@@ -20,9 +20,11 @@
   text-transform: @text-transform;
 }
 
-.price__title p {
+.price__title span {
   font-size: @max-font;
   font-weight: 100;
+  display: flex;
+  flex-direction: column;
 }
 
 .price__body {
@@ -36,7 +38,7 @@
   border-right: 2px solid #e5e5e5;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .price {
     padding-bottom: 70px;
   }
