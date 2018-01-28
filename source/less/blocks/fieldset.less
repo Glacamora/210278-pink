@@ -92,17 +92,16 @@
     margin: 0 auto;
     padding-top: 0;
 
-      &_achievements {
-        order: 3;
-      }
-
-      &_app {
-        order: 0;
-      }
+    &_achievements {
+      order: 3;
     }
 
-  .fieldset__legend {
+    &_app {
+      order: 0;
+    }
+  }
 
+  .fieldset__legend {
     &_story {
       padding-top: 0;
       padding-bottom: 0;
@@ -120,29 +119,28 @@
   .fieldset__item {
     flex-direction: row;
 
-      &_contacts {
-        flex-direction: column-reverse;
-      }
+    &_contacts {
+      flex-direction: column-reverse;
     }
   }
+}
 
-  @media (min-width: 1200px) {
-    .fieldset_border {
-      width: 940px;
-    }
-
-    .fieldset_name {
-      width: 470px;
-      margin-right: 0;
-      padding-right: 0;
-    }
-
-    .fieldset_width {
-      width: 470px;
-    }
-
-    .fieldset__wrapper_app {
-      margin-left: 0;
-    }
-
+@media (min-width: 1200px) {
+  .fieldset_border {
+    width: 940px;
   }
+
+  .fieldset_name {
+    width: 470px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .fieldset_width {
+    width: 470px;
+  }
+
+  .fieldset__wrapper_app {
+    margin-left: 0;
+  }
+}
