@@ -7,11 +7,19 @@
 }
 
 .nav-list__link {
+  display: block;
   line-height: 32px;
   font-size: @medium-font;
   font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: @white;
   text-transform: @text-transform;
+}
+
+.nav-list__item {
+  border-bottom: 1px solid #010101;
+  border-top: 1px solid #485461;
 }
 
 @media (min-width: 1200px) {
@@ -23,5 +31,9 @@
     padding-left: 80px;
     font-weight: 400;
     text-transform: none;
+  }
+
+  .nav-list__item {
+    border: none;
   }
 }

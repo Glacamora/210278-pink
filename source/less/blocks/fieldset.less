@@ -27,9 +27,11 @@
 }
 
 .fieldset__legend {
-  color: #d22856;
+  color: @strong-pink;
+  line-height: 18px;
   text-transform: @text-transform;
   text-align: @text-align;
+  margin-bottom: 27px;
 
   &_story {
     padding-top: 36px;
@@ -48,7 +50,12 @@
   &_row {
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 45px;
   }
+}
+
+.fieldset_achievements .fieldset__legend {
+  width: 230px;
 }
 
 .fieldset-textarea__story {
@@ -58,13 +65,25 @@
   padding-top: 15px;
   width: 100%;
   min-height: 200px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
   box-sizing: border-box;
+}
+
+.fieldset__item_width {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: 660px) {
   .fieldset {
     width: 620px;
     margin-top: 50px;
+
+    &_name {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
     &_border {
       border: 2px solid #e5e5e5;
@@ -76,10 +95,16 @@
 
     &_contacts {
       order: 2;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     &_textarea {
       order: 4;
+    }
+
+    &_row {
+      margin-bottom: 0;
     }
   }
 
@@ -98,6 +123,11 @@
   }
 
   .fieldset__legend {
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+
     &_story {
       padding-top: 0;
       padding-bottom: 0;
@@ -108,8 +138,12 @@
     }
   }
 
-  .fieldset-textarea__story {
-    margin-top: 40px;
+  .fieldset_achievements .fieldset__legend {
+    width: auto;
+  }
+
+  .fieldset_width {
+    padding-bottom: 20px;
   }
 
   .fieldset__item {
@@ -119,22 +153,111 @@
       flex-direction: column-reverse;
     }
   }
+
+  .fieldset__item-name {
+    margin-bottom: 49px;
+    align-items: center;
+  }
+
+  .fieldset__item-name:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .fieldset-textarea__story {
+    margin-top: 37px;
+  }
+
+  .fieldset_achievements span {
+    display: block;
+    margin-top: 31px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .fieldset {
+    margin-top: 0;
+  }
+
   .fieldset_border {
     width: 940px;
   }
 
   .fieldset_name {
-    width: 460px;
+    width: 435px;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 
   .fieldset_width {
-    width: 465px;
+    width: 433px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .fieldset__item_width {
+    margin-left: 75px;
+    width: 288px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
   }
 
   .fieldset__wrapper_app {
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: 63px;
+    width: 450px;
+    box-sizing: border-box;
+  }
+
+  .fieldset_contacts {
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .fieldset_contacts span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fieldset__item_contacts {
+    width: 375px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .fieldset__wrapper_achievements {
+    margin-top: 50px;
+  }
+
+  .fieldset_achievements {
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 0;
+    padding-bottom: 0;
+    min-height: 100%;
+  }
+
+  .fieldset_achievements span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 876px;
+  }
+
+  .fieldset_achievements p:nth-child(2n) {
+    order: 2;
+  }
+
+  .fieldset_textarea {
+    margin-top: 30px;
+  }
+
+  .fieldset__item_row {
+    width: 288px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
   }
 }
