@@ -1,8 +1,13 @@
 .fieldset {
   border: none;
-  width: 280px;
+  /*width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0;*/
+  margin: 0;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 20px;
+  box-sizing: border-box;
 
   &_name {
     padding-top: 20px;
@@ -10,8 +15,8 @@
   }
 
   &_contacts {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
   &_textarea {
@@ -24,6 +29,7 @@
   background-color: @light-gray;
   padding-top: 36px;
   padding-bottom: 18px;
+  box-sizing: border-box;
 }
 
 .fieldset__legend {
@@ -35,7 +41,7 @@
 
   &_story {
     padding-top: 36px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &_contacts {
@@ -60,14 +66,15 @@
 
 .fieldset-textarea__story {
   font-size: @medium-font;
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 15px;
   width: 100%;
   min-height: 200px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .fieldset__item_width {
@@ -77,12 +84,10 @@
 
 @media (min-width: 660px) {
   .fieldset {
-    width: 620px;
     margin-top: 50px;
 
     &_name {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding: 0;
     }
 
     &_border {
@@ -110,7 +115,6 @@
 
   .fieldset__wrapper {
     background-color: transparent;
-    margin: 0 auto;
     padding-top: 0;
 
     &_achievements {
@@ -130,7 +134,6 @@
 
     &_story {
       padding-top: 0;
-      padding-bottom: 0;
     }
 
     &_contacts {
@@ -179,18 +182,14 @@
     margin-top: 0;
   }
 
-  .fieldset_border {
-    width: 940px;
-  }
-
   .fieldset_name {
-    width: 435px;
+    width: 46%;
     margin-right: 0;
     box-sizing: border-box;
   }
 
   .fieldset_width {
-    width: 433px;
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -205,8 +204,8 @@
 
   .fieldset__wrapper_app {
     margin-right: 0;
-    margin-left: 63px;
-    width: 450px;
+    margin-left: 66px;
+    width: 46%;
     box-sizing: border-box;
   }
 
@@ -244,7 +243,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 876px;
+    width: 869px;
   }
 
   .fieldset_achievements p:nth-child(2n) {

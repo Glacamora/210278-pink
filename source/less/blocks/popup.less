@@ -4,8 +4,15 @@
 }
 
 .popup {
+  position: fixed;
   width: 100%;
+  padding-top: 36px;
+  top: 25%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
+  background-color: @white;
+  box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
 }
 
 .popup__succes {
@@ -25,10 +32,7 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
-
-  &_succes {
-    margin-bottom: 35px;
-  }
+  margin-bottom: 25px;
 }
 
 .popup__message {
@@ -41,7 +45,6 @@
   color: #000000;
 
   &_succes {
-    margin-top: 35px;
     margin-bottom: 35px;
   }
 
@@ -62,5 +65,56 @@
     background-color: @light-gray;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 660px) {
+  .popup {
+    width: 460px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), -20px 0 30px -15px rgba(0, 0, 0, 0.1), 20px 0 30px -15px rgba(0, 0, 0, 0.1), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    font-size: @medium-font;
+    width: 300px;
+  }
+
+  .popup__failure {
+    padding-bottom: 52px;
+  }
+
+  .popup__title_succes, {
+    margin-bottom: 20px;
+  }
+
+  .popup__message_succes {
+    margin-top: 20px;
+  }
+
+  .popup__message_failure {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup__succes {
+    width: 780px;
+  }
+
+  .popup {
+    padding-top: 40px;
+  }
+
+  .popup__title_succes {
+    width: auto;
+  }
+
+  .popup__message_succes {
+    width: 400px;
   }
 }

@@ -39,8 +39,10 @@
     z-index: 5;
   }
 
-  .page-header_js .main-nav__toggle {
+  .page-header_js .page-header_opened .main-nav__toggle {
     display: block;
+    width: 34px;
+    height: 37px;
   }
 
   .page-header_opened .main-nav .main-nav__toggle {
@@ -48,8 +50,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 17px;
-      left: 18px;
+      top: 18px;
+      left: 6px;
       width: 29px;
       height: 4px;
       background-color: @white;

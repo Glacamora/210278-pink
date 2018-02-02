@@ -39,6 +39,14 @@
 }
 
 @media (min-width: 660px) {
+  .main-form__contest {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
   .main-form__title {
     font-size: @medium-font;
     padding-top: 90px;
@@ -58,7 +66,7 @@
     order: 5;
     min-height: 60px;
     padding-top: 60px;
-    width: 620px;
+    width: 100%;
   }
 }
 
@@ -72,8 +80,14 @@
   .main-form__form {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 960px;
-    margin: 0 auto;
+    /*width: 960px;
+    margin: 0 auto;*/
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-form__contest {
+    padding: 0 10px;
   }
 
   .main-form__submit-wrapper {

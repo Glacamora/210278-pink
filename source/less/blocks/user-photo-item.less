@@ -49,6 +49,7 @@
 
   &_panorama {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -92,6 +93,22 @@
   .user-photo-item__like-panorama {
     margin-top: 0;
     margin-left: auto;
+  }
+
+  .user-photo-item__like {
+    padding-left: 0;
+  }
+
+  .user-photo-item__description_panorama .user-photo-item__like {
+    padding-left: 30px;
+  }
+
+  .user-photo-item__like::before {
+    left: 220px;
+  }
+
+  .user-photo-item__description_panorama .user-photo-item__like::before {
+    left: 0;
   }
 }
 
