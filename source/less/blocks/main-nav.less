@@ -27,9 +27,20 @@
   display: block;
   width: 50px;
   height: 29px;
-  background-color: inherit;
+  background-color: transparent;
   cursor: pointer;
   border: none;
+
+  &:hover::before {
+    background-color: @strong-pink;
+    box-shadow: 0 10px 0 0 @strong-pink, 0 20px 0 0 @strong-pink;
+  }
+
+  &:active::before {
+    background-color: @strong-pink;
+    box-shadow: 0 10px 0 0 @strong-pink, 0 20px 0 0 @strong-pink;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {
@@ -59,7 +70,9 @@
   }
 
   .main-nav__wrapper-nav {
-    width: 245px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .main-nav__list {

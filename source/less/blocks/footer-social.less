@@ -21,26 +21,34 @@
   height: 47px;
   margin-left: 6px;
   margin-right: 6px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .footer-social__icon {
   position: absolute;
   fill: @strong-pink;
-}
 
-.footer-social__icon_twitter {
-  left: 16px;
-  top: 16px;
-}
+  &_twitter {
+    left: 16px;
+    top: 16px;
+  }
 
-.footer-social__icon_facebook {
-  left: 19px;
-  top: 13px;
-}
+  &_facebook {
+    left: 19px;
+    top: 13px;
+  }
 
-.footer-social__icon_youtube {
-  left: 17px;
-  top: 16px;
+  &_youtube {
+    left: 17px;
+    top: 16px;
+  }
 }
 
 @media (min-width: 660px) {

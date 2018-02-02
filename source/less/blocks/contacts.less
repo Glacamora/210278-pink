@@ -15,6 +15,20 @@
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
+
+  &_link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: #283645;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: 660px) {
@@ -23,6 +37,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .contacts__wrapper {
+    &_order {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .contacts__info {
@@ -35,12 +56,14 @@
     flex-wrap: nowrap;
   }
 
-  .contacts__wrapper:first-of-type {
-    margin-right: 20px;
-  }
+  .contacts__wrapper {
+    &:first-of-type {
+      margin-right: 20px;
+    }
 
-  .contacts__wrapper_order {
-    order: 3;
-    margin-left: 20px;
+    &_order {
+      order: 3;
+      margin-left: 20px;
+    }
   }
 }

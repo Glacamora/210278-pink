@@ -1,4 +1,4 @@
-.popup__succes_hidden,
+.popup__success_hidden,
 .popup__failure_hidden {
   display: none;
 }
@@ -12,10 +12,11 @@
   right: 0;
   margin: 0 auto;
   background-color: @white;
-  box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
 }
 
-.popup__succes {
+.popup__success {
   padding-top: 35px;
 }
 
@@ -30,9 +31,16 @@
   width: 280px;
   font-size: @medium-font;
   line-height: 24px;
-  text-align: center;
+  text-align: @text-align;
   color: #000000;
-  margin-bottom: 25px;
+
+  &_success {
+    margin-bottom: 25px;
+  }
+
+  &_failure {
+    margin-bottom: 30px;
+  }
 }
 
 .popup__message {
@@ -44,7 +52,7 @@
   text-align: center;
   color: #000000;
 
-  &_succes {
+  &_success {
     margin-bottom: 35px;
   }
 
@@ -53,15 +61,11 @@
   }
 }
 
-.popup__title_failure {
-  margin-bottom: 30px;
-}
-
 .popup__wrapper {
   background-color: @white;
-  text-align: center;
+  text-align: @text-align;
 
-  &_succes {
+  &_success {
     background-color: @light-gray;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -71,38 +75,37 @@
 @media (min-width: 660px) {
   .popup {
     width: 460px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), -20px 0 30px -15px rgba(0, 0, 0, 0.1), 20px 0 30px -15px rgba(0, 0, 0, 0.1), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
   }
 
   .popup__title {
     font-size: 30px;
     line-height: 40px;
+
+    &_success {
+      margin-bottom: 20px;
+    }
   }
 
   .popup__message {
     font-size: @medium-font;
     width: 300px;
+
+    &_success {
+      margin-top: 20px;
+    }
+
+    &_failure {
+      margin-bottom: 35px;
+    }
   }
 
   .popup__failure {
     padding-bottom: 52px;
   }
-
-  .popup__title_succes, {
-    margin-bottom: 20px;
-  }
-
-  .popup__message_succes {
-    margin-top: 20px;
-  }
-
-  .popup__message_failure {
-    margin-bottom: 35px;
-  }
 }
 
 @media (min-width: 1200px) {
-  .popup__succes {
+  .popup__success {
     width: 780px;
   }
 
@@ -110,11 +113,15 @@
     padding-top: 40px;
   }
 
-  .popup__title_succes {
-    width: auto;
+  .popup__title {
+    &_success {
+      width: auto;
+    }
   }
 
-  .popup__message_succes {
-    width: 400px;
+  .popup__message {
+    &_success {
+      width: 400px;
+    }
   }
 }

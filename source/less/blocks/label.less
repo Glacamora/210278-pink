@@ -32,6 +32,17 @@
 .label__checkbox,
 .label__radio {
   position: relative;
+  cursor: pointer;
+}
+
+.label__checkbox:hover::before,
+.label__radio:hover::before {
+  border-color: #283645;
+}
+
+.label__checkbox:active::before,
+.label__radio:active::before {
+  border-color: @strong-pink;
 }
 
 .input-radio:checked + .label__radio::after {
@@ -56,20 +67,17 @@
 }
 
 .input-checkbox,
-.input-checkbox + .label__checkbox .icon-yes, {
+.input-checkbox + .label__checkbox .icon-yes {
   display: none;
   cursor: pointer;
 }
 
-.input-radio {
-  position: absolute;
-  opacity: 0;
-}
-
 @media (min-width: 660px) {
-  .label_heading {
-    padding-left: 0;
-    padding-right: 19px;
+  .label {
+    &_heading {
+      padding-left: 0;
+      padding-right: 19px;
+    }
   }
 
   .label__checkbox {
@@ -86,13 +94,17 @@
 }
 
 @media (min-width: 1200px) {
-  .label_heading-contacts {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .label {
+    &_heading-contacts {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
-  .label__checkbox_margin {
-    margin-left: 22px;
+  .label__checkbox {
+    &_margin {
+      margin-left: 22px;
+    }
   }
 
   .label__checkbox::before {

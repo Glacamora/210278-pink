@@ -16,11 +16,33 @@
   color: @white;
   text-transform: @text-transform;
   text-decoration: none;
+
+  &:hover {
+    color: @strong-pink;
+  }
+
+  &:active {
+    color: @white;
+    opacity: 0.2;
+  }
 }
 
 .nav-list__item {
   border-bottom: 1px solid #010101;
   border-top: 1px solid #485461;
+}
+
+@media (max-width: 1199px) {
+  .nav-list__item_active .nav-list__link {
+    cursor: default;
+  }
+
+  .nav-list__link {
+    &:active {
+      color: @strong-pink;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -36,5 +58,28 @@
 
   .nav-list__item {
     border: none;
+  }
+
+  .nav-list__item_active .nav-list__link {
+    cursor: default;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: @white;
+      height: 2px;
+      left: 82px;
+      right: 0;
+      bottom: 7px;
+    }
+
+    &:hover {
+      color: @white;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }

@@ -12,10 +12,26 @@
     border-radius: 50%;
     cursor: pointer;
     margin-right: 15px;
-  }
 
-  .slider-toggle_active {
-    background-color: @white;
-    border: 3px solid #283645;
+    &:hover {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &_active {
+      background-color: @white;
+      border: 3px solid #283645;
+
+      &:hover {
+        background-color: @white;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
   }
 }

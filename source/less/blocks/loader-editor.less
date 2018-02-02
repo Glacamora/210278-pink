@@ -34,16 +34,28 @@
   margin-left: 10px;
 }
 
-.loader-editor__toggle-fill {
+.loader-editor__toggle {
   position: absolute;
   cursor: pointer;
   width: 10px;
   height: 10px;
   top: -6px;
-  left: 30px;
+  left: 216px;
   background-color: @light-gray;
   border: 2px solid #cd2856;
   border-radius: 50%;
+
+  &_crop {
+    left: 156px;
+  }
+
+  &_fill {
+    left: 42px;
+  }
+
+  &_contrast {
+    left: 111px;
+  }
 
   &:active {
     background-color: @strong-pink;
@@ -100,11 +112,21 @@
     width: 390px;
   }
 
-  .button-icon_contrast svg {
-    margin-left: 0;
-  }
-
   .loader-editor__line {
     width: 288px;
+  }
+
+  .loader-editor__toggle {
+    &_crop {
+      left: 97px;
+    }
+
+    &_fill {
+      left: 252px;
+    }
+
+    &_contrast {
+      left: 181px;
+    }
   }
 }
