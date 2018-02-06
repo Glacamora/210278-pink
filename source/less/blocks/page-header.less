@@ -41,9 +41,11 @@
   }
 
   .page-header_js .page-header_opened .main-nav__toggle {
-    display: block;
-    width: 34px;
-    height: 37px;
+    width: 32px;
+    height: 32px;
+    margin-right: -10px;
+    padding-top: 39px;
+    padding-right: 41px;
   }
 
   .page-header_opened .main-nav .main-nav__toggle {
@@ -51,20 +53,22 @@
     &::after {
       position: absolute;
       content: "";
-      top: 18px;
-      left: 6px;
-      width: 29px;
+      top: 50%;
+      left: 0;
+      right: 0;
+      width: 25px;
       height: 4px;
       background-color: @white;
+      border-radius: 0.5px;
     }
 
     &::before {
-      transform: rotate(45deg);
+      transform: translate(35%, -65%) rotate(45deg);
       box-shadow: none;
     }
 
     &::after {
-      transform: rotate(-45deg);
+      transform: translate(35%, -65%) rotate(-45deg);
     }
 
     &:hover::before,
