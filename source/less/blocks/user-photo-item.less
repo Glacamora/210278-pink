@@ -64,7 +64,8 @@
   }
 
   .user-photo-item__text {
-    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 36px;
   }
 
   .user-photo-item__text-panorama {
@@ -72,6 +73,7 @@
   }
 
   .user-photo-item__description {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 111px;
@@ -88,16 +90,20 @@
     }
   }
 
+  .user-photo-item__like {
+    padding-left: 0;
+    position: absolute;
+    top: 113px;
+  }
+
   .user-photo-item__like-panorama {
+    position: relative;
     margin-top: 0;
     margin-left: auto;
   }
 
-  .user-photo-item__like {
-    padding-left: 0;
-  }
-
   .user-photo-item__description_panorama .user-photo-item__like {
+    top: 0;
     padding-left: 30px;
   }
 

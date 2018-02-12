@@ -14,11 +14,12 @@
   &_contacts {
     padding-top: 20px;
     padding-bottom: 30px;
+    width: 100%;
   }
 
   &_textarea {
     padding-top: 0;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
 }
 
@@ -30,6 +31,7 @@
 }
 
 .fieldset__legend {
+  margin: 0 auto;
   color: @strong-pink;
   line-height: 18px;
   text-transform: @text-transform;
@@ -78,6 +80,10 @@
   box-sizing: border-box;
   resize: none;
 
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
+
   &:hover {
     border-color: #283645;
   }
@@ -86,6 +92,10 @@
     border-color: @strong-pink;
     outline: 0;
   }
+}
+
+.fieldset__item_row:last-of-type {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 660px) {
@@ -181,6 +191,32 @@
     margin-top: 31px;
     margin-bottom: 10px;
   }
+
+  .fieldset__contacts {
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      width: 62px;
+      height: 58px;
+      background-image: url("../img/icon-phone.svg");
+      background-color: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 19px;
+      top: 2px;
+      right: 2px;
+    }
+
+    &_phone::before {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &_email::before {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -208,6 +244,8 @@
 
     &_achievements {
       padding-right: 0;
+      padding-left: 0;
+      width: 940px;
       min-height: 100%;
     }
 
@@ -235,6 +273,21 @@
       padding-bottom: 0;
       margin-bottom: 45px;
     }
+
+    &_left {
+      width: 260px;
+      padding-left: 60px;
+    }
+
+    &_center {
+      width: 240px;
+      padding-left: 55px;
+    }
+
+    &_right {
+      width: 260px;
+      padding-left: 50px;
+    }
   }
 
   .fieldset__wrapper {
@@ -259,8 +312,8 @@
   .fieldset_achievements div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 877px;
+    justify-content: flex-start;
+    width: 940px;
   }
 
   .fieldset_achievements p:nth-child(2n) {
