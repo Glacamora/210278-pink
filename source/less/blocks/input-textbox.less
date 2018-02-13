@@ -13,11 +13,25 @@
     border-color: @strong-pink;
     outline: 0;
   }
+
+  &_contacts {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #283645;
+  }
 }
 
 @media (min-width: 660px) {
   .input-textbox {
-    width: auto;
+    width: 100%;
     flex-grow: 1;
+    min-height: 30px;
+
+    &_contacts {
+      min-height: 62px;
+    }
   }
 }
