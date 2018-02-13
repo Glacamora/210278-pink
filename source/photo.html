@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
-  <style>
-    @import "./css/style.css";
-  </style>
   <body>
     <header class="page-header page-header_nojs">
       <div class="page-header__wrapper">
@@ -93,11 +91,11 @@
         <article class="user-photo-panorama">
           <a href="./img/panorama-desktop@1x.jpg">
             <picture class="user-photo-panorama__badge">
-            <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
-            <img class="user-photo-item__img_panorama" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="">
+              <source media="(min-width: 1200px)" srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+              <img class="user-photo-item__img_panorama" src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x" alt="">
+            </picture>
           </a>
-          </picture>
           <div class="user-photo-item user-photo-item_panorama">
             <div class="user-photo-item__description user-photo-item__description_panorama">
               <b class="user-photo-item__name">Анна <span>(5 минут назад)</span></b>
@@ -373,7 +371,7 @@
         </div>
       </section>
     </footer>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.min.js"></script>
     <script type="text/javascript" src="js/picturefill.js" async=""></script>
   </body>
 </html>
