@@ -8,11 +8,10 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
 var run = require("run-sequence");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
 var minifycss = require("gulp-csso");
 var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -49,11 +48,9 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("html", function () {
+gulp.task("html", function() {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-    include()
-  ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
