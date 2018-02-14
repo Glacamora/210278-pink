@@ -8,12 +8,12 @@
 
   &_name {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 
   &_contacts {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 23px;
     width: 100%;
   }
 
@@ -46,6 +46,10 @@
   &_contacts {
     display: none;
   }
+
+  &_app {
+    margin-bottom: 6px;
+  }
 }
 
 .fieldset__item {
@@ -55,12 +59,12 @@
   &_row {
     flex-direction: row;
     align-items: baseline;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   &_width {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 34px;
+    margin-bottom: 25px;
   }
 }
 
@@ -117,7 +121,7 @@
     &_contacts {
       order: 2;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     &_textarea {
@@ -136,6 +140,7 @@
   .fieldset__wrapper {
     background-color: transparent;
     padding-top: 0;
+    padding-bottom: 0;
 
     &_achievements {
       order: 3;
@@ -170,6 +175,16 @@
 
     &_contacts {
       flex-direction: column-reverse;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &_contacts:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &_width:last-of-type {
+      padding-bottom: 13px;
     }
   }
 
@@ -183,13 +198,14 @@
   }
 
   .fieldset-textarea__story {
-    margin-top: 37px;
+    margin-top: 33px;
+    min-height: 190px;
   }
 
   .fieldset_achievements div {
     display: block;
-    margin-top: 31px;
-    margin-bottom: 10px;
+    margin-top: 41px;
+    margin-bottom: 46px;
   }
 
   .fieldset__contacts {
@@ -234,12 +250,13 @@
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
+      height: 313px;
     }
 
     &_contacts {
       padding-top: 30px;
       padding-bottom: 0;
-      margin-top: 30px;
+      margin-top: 51px;
     }
 
     &_achievements {
@@ -250,7 +267,8 @@
     }
 
     &_textarea {
-      margin-top: 30px;
+      margin-top: 50px;
+      padding-bottom: 33px;
     }
   }
 
@@ -271,7 +289,7 @@
     &_row {
       width: 288px;
       padding-bottom: 0;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
     }
 
     &_left {
@@ -314,9 +332,20 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 940px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .fieldset_achievements p:nth-child(2n) {
     order: 2;
+  }
+
+  .fieldset-textarea__story {
+    min-height: 127px;
+    margin-top: 28px;
+  }
+
+  .fieldset__item-name {
+    margin-top: 19px;
   }
 }

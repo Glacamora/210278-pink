@@ -10,11 +10,11 @@
     width: 300px;
     line-height: 24px;
     padding-top: 96px;
-    padding-left: 315px;
+    padding-left: 311px;
     padding-bottom: 75px;
     margin: 0 auto;
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-    background-position: 23px 114px, 5px 59px;
+    background-position: 19px 115px, 0 59px;
     background-repeat: no-repeat;
     background-size: 204px 204px, 241px 278px;
 
@@ -23,7 +23,7 @@
       display: block;
       position: absolute;
       top: 110px;
-      left: 24px;
+      left: 20px;
       width: 205px;
       height: 205px;
       text-align: center;
@@ -41,6 +41,11 @@
     line-height: 36px;
   }
 
+  .research__text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .research__link {
     color: @strong-pink;
   }
@@ -49,20 +54,24 @@
 @media (min-width: 1200px) {
   .research {
     background-color: @light-gray;
-    padding-bottom: 65px;
+    padding-bottom: 42px;
   }
 
   .research__wrapper {
     width: 530px;
     padding-top: 157px;
-    padding-left: 365px;
+    padding-left: 405px;
     background-size: 253px 253px, 298px 345px;
-    background-position: 23px 136px, 0 66px;
+    background-position: 24px 137px, 1px 68px;
 
     &::before {
       font-size: 120px;
       top: 150px;
-      left: 43px;
+      left: 48px;
+    }
+
+    div {
+      margin-left: -35px;
     }
   }
 
@@ -73,6 +82,9 @@
   .research__text {
     font-size: @medium-font;
     line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 554px;
   }
 
   .research__link {

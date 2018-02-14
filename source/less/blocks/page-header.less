@@ -12,7 +12,7 @@
 }
 
 .page-header__hand {
-  height: 465px;
+  height: 462px;
 }
 
 .page-header_js .page-title {
@@ -106,8 +106,9 @@
 
 @media (min-width: 660px) {
   .page-header {
-    min-height: 331px;
+    min-height: 441px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -119,7 +120,7 @@
   }
 
   .page-header_js .page-title {
-    padding-top: 110px;
+    padding-top: 191px;
   }
 
   .page-header_index {
@@ -144,13 +145,14 @@
   .page-header {
     min-height: 395px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-  }
 
-  .page-header_index {
-    min-height: 850px;
+    &_index {
+      min-height: 858px;
+    }
   }
 }

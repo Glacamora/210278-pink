@@ -1,7 +1,10 @@
+.contacts {
+  margin-bottom: 35px;
+}
+
 .contacts__wrapper {
   text-align: @text-align;
-  margin-bottom: 20px;
-  margin-top: 26px;
+  margin-bottom: 10px;
 }
 
 .contacts__title {
@@ -37,12 +40,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 0;
   }
 
   .contacts__wrapper {
     &_order {
       display: flex;
       flex-direction: column;
+    }
+
+    &:last-of-type {
+      margin-top: 35px;
     }
   }
 
@@ -65,5 +73,13 @@
       order: 3;
       margin-left: 20px;
     }
+
+    &:last-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .contacts__info {
+    margin-top: 15px;
   }
 }

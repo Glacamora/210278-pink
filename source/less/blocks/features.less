@@ -1,6 +1,7 @@
 .features__header {
   width: 280px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .features__header-title {
@@ -88,6 +89,7 @@
     width: 620px;
     position: relative;
     align-items: flex-end;
+    padding-top: 70px;
 
     &::before {
       position: absolute;
@@ -121,8 +123,8 @@
 @media (min-width: 1200px) {
   .features__header {
     width: 820px;
-    padding-top: 40px;
-    padding-bottom: 75px;
+    padding-top: 24px;
+    padding-bottom: 72px;
   }
 
   .features__header-title {
@@ -141,11 +143,10 @@
   .features__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     width: 940px;
     padding-top: 0;
-    padding-left: 15px;
 
     &::before {
       display: none;
@@ -156,6 +157,7 @@
     width: 280px;
     text-align: center;
     padding-top: 0;
+    margin-left: 5px;
 
     &::before {
       display: block;
@@ -201,23 +203,29 @@
 
   .features__title,
   .features__item:first-of-type .features__title:first-of-type {
-    margin-top: 45px;
+    margin-top: 48px;
   }
 
   .features__title {
     font-size: 30px;
     line-height: 30px;
+    padding-left: 15px;
   }
 
   .features__item_friends .features__title {
     width: 240px;
-    padding-left: 20px;
+    padding-left: 25px;
+  }
+
+  .features__item_friends {
+    margin-right: 15px;
   }
 
   .features__text {
     font-size: @medium-font;
     line-height: 30px;
     width: 238px;
-    padding-left: 25px;
+    padding-left: 27px;
+    margin-top: 27px;
   }
 }

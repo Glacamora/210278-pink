@@ -1,12 +1,16 @@
 .user-photo-panorama {
   line-height: 0;
   position: relative;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .user-photo-panorama__badge::before {
   position: absolute;
   top: 0;
-  right: 4%;
+  right: 6%;
   content: "панорама дня";
   width: 140px;
   height: 36px;
@@ -21,13 +25,12 @@
 @media (min-width: 660px) {
   .user-photo-panorama__badge::before {
     top: 57px;
-    right: 3%;
   }
 }
 
 @media (min-width: 1200px) {
   .user-photo-panorama__badge::before {
     top: 54px;
-    right: 10%;
+    right: 11%;
   }
 }

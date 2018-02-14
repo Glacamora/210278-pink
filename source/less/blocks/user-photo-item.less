@@ -41,6 +41,7 @@
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    cursor: pointer;
   }
 }
 
@@ -70,6 +71,7 @@
 
   .user-photo-item__text-panorama {
     order: 1;
+    margin-bottom: 0;
   }
 
   .user-photo-item__description {
@@ -80,7 +82,7 @@
     padding-top: 24px;
     padding-left: 29px;
     padding-right: 29px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 
     &_panorama {
       min-height: auto;
@@ -104,7 +106,7 @@
 
   .user-photo-item__description_panorama .user-photo-item__like {
     top: 0;
-    padding-left: 30px;
+    right: 33px;
   }
 
   .user-photo-item__like::before {
@@ -112,17 +114,27 @@
   }
 
   .user-photo-item__description_panorama .user-photo-item__like::before {
-    left: 0;
+    left: 109px;
+    cursor: pointer;
   }
 }
 
 @media (min-width: 1200px) {
   .user-photo-item {
-    padding-bottom: 55px;
+    padding-bottom: 54px;
 
     &_panorama {
       width: 940px;
       padding-bottom: 50px;
+      min-height: auto;
     }
+  }
+
+  .user-photo-item__description {
+    padding-bottom: 20px;
+  }
+
+  .user-photo-item__description_panorama {
+    min-height: auto;
   }
 }
