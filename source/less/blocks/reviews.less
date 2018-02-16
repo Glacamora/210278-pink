@@ -52,8 +52,9 @@
   }
 
   .reviews__name {
-    font-size: 20px;
     order: 1;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .reviews__about {
@@ -68,9 +69,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .reviews {
-    padding-top: 170px;
+    padding-top: 144px;
     background-image: url("../img/icon-quotes.svg");
     background-size: 78px 63px;
     background-repeat: no-repeat;
@@ -87,6 +88,10 @@
     font-size: @max-font;
   }
 
+  .reviews__text {
+    margin-top: 40px;
+  }
+
   .reviews__about {
     font-size: @medium-font;
   }
@@ -95,21 +100,19 @@
     display: block;
     position: absolute;
     font-size: 0;
+    top: 64px;
+    height: 42px;
     border: none;
     background-color: transparent;
 
     &_previous {
-      top: 39px;
-      left: -104px;
-      width: 60px;
-      height: 42px;
+      left: -100px;
+      padding-left: 10px;
     }
 
     &_next {
-      top: 39px;
-      right: -107px;
-      width: 60px;
-      height: 42px;
+      right: -100px;
+      padding-right: 10px;
     }
 
     & svg {

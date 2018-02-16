@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: #1d2631;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .download-app__title {
@@ -13,7 +13,7 @@
 .download-app__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 206px;
   padding-top: 25px;
   padding-bottom: 20px;
@@ -31,6 +31,7 @@
 
 .download-app__item {
   align-self: baseline;
+  margin-right: 34px;
 }
 
 .download-app__wrapper {
@@ -49,7 +50,7 @@
     width: 258px;
     height: 286px;
     top: -316px;
-    left: -7px;
+    left: -20px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -62,7 +63,7 @@
 
 @media (min-width: 660px) {
   .download-app__wrapper {
-    width: 365px;
+    width: 345px;
   }
 
   .download-app__wrapper::before {
@@ -73,14 +74,14 @@
 
   .download-app {
     justify-content: flex-start;
-    width: 700px;
+    width: 660px;
     background-color: transparent;
     margin: -610px auto 0;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -11px 65px;
+    background-position: -19px 65px;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 103px;
+    background-size: 700px 545px;
+    padding-bottom: 108px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -101,7 +102,7 @@
 
   .download-app__list {
     padding-top: 40px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
   }
 
   .download-app__text {
@@ -110,17 +111,18 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .download-app__wrapper {
-    margin-left: 20px;
+    width: 302px;
   }
 
   .download-app {
-    width: 1050px;
+    width: 940px;
     margin-top: -665px;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 70px 20px;
     padding-bottom: 166px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 13px 20px;
+    background-size: 1050px 645px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
